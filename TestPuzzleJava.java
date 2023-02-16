@@ -9,9 +9,14 @@ public class TestPuzzleJava {
         // ---- getTenRolls Test ----
 		ArrayList<Integer> randomRolls = generator.getTenRolls(20);
 		System.out.println(randomRolls);
-
         // ---- getRandomLetter Test ----
         System.out.println("Your random letter is " + generator.getRandomLetter());
+        
+        System.out.println(generator.generatePassword());
+        
+        // ---- getNewPasswordSet Test ----
+        ArrayList<String> newPassword = generator.getNewPasswordSet(5);
+        System.out.println(newPassword);
 
     }
 }
